@@ -55,11 +55,13 @@ public class SampleController {
 
     @RequestMapping("/sendSMS")
     @ResponseBody
-    ResponseEntity<String> sendSMS() throws Throwable {
+    ResponseEntity<String> sendSMS(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Cache-Control", "no-cache");
         //手机号
         Random random = new Random();
         int r = random.nextInt(9999);
-        String mobile = "13810525644";
+        String mobile = request.getParameter("phone");;
         String content = "【中交兴路】验证码为" + r + "，请在5分钟内输入，谢谢使用！";
         String account = "ZJWBGYS";
         String password = "4HEXC3tM";
