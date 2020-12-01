@@ -1,4 +1,4 @@
-package controller;
+package zhongjian.controller;
 
 import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import service.MailService;
-import util.EmailUtil;
-import util.SendMessageUtil;
+import zhongjian.service.MailService;
+import zhongjian.util.EmailUtil;
+import zhongjian.util.SendMessageUtil;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
