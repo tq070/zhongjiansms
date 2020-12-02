@@ -1,0 +1,29 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+2020-12-02 01:18:31.168  INFO 26327 --- [           main] zhongjian.controller.MavenApplication    : Starting MavenApplication v1.0-SNAPSHOT on alideMacBook-Pro-2.local with PID 26327 (/Users/ali/daimler/zhongjiansms/target/zongjiaosms-1.0-SNAPSHOT.jar started by ali in /Users/ali/daimler/zhongjiansms/target)
+2020-12-02 01:18:31.200  INFO 26327 --- [           main] zhongjian.controller.MavenApplication    : No active profile set, falling back to default profiles: default
+2020-12-02 01:18:31.935  INFO 26327 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-12-02 01:18:31.949  INFO 26327 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-02 01:18:31.950  INFO 26327 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12-02 01:18:31.956  INFO 26327 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12-02 01:18:32.005  INFO 26327 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-02 01:18:32.005  INFO 26327 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 770 ms
+2020-12-02 01:18:32.020  INFO 26327 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-12-02 01:18:32.022  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-02 01:18:32.023  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-02 01:18:32.023  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2020-12-02 01:18:32.024  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-02 01:18:32.156  INFO 26327 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-02 01:18:32.235  WARN 26327 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 01:18:32.399  INFO 26327 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2020-12-02 01:18:32.401  INFO 26327 --- [           main] zhongjian.controller.MavenApplication    : Started MavenApplication in 16.549 seconds (JVM running for 16.932)
+2020-12-02 01:18:57.987  INFO 26327 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 01:18:57.987  INFO 26327 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-02 01:18:57.993  INFO 26327 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
