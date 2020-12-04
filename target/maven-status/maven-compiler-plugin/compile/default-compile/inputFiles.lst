@@ -1,10 +1,10 @@
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/controller/MavenApplication.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/service/MailService.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/util/MD5Utils.java
+/Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/controller/SMSController.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/util/HttpClient.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/controller/ServletInitializer.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/util/HttpSendUtils.java
-/Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/controller/SampleController.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/util/SendMessageUtil.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/util/EmailUtil.java
 /Users/ali/daimler/zhongjiansms/src/main/java/zhongjian/util/SendMessageByHttpDemo.java

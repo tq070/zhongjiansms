@@ -15,6 +15,31 @@
         <version>2.1.0.RELEASE</version>
         <relativePath/>
     </parent>
+    <repositories>
+        <!-- 阿里云仓库,配置Maven仓库，速度快配置在最前面 -->
+        <repository>
+            <id>aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+        <!-- 国内备选仓库 -->
+        <repository>
+            <id>repo2</id>
+            <url>http://repo2.maven.org/maven2/</url>
+        </repository>
+
+        <!-- Cloudera仓库,如果在阿里云仓库里找不到去Cloudera的仓库里找，主要是CDH版本Hadoop依赖的jar -->
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+
+        <!-- Scala仓库,如果前面两个都找不到来仓库找，如果此仓库也找不到，去中央仓库找 -->
+        <repository>
+            <id>scala-tools.org</id>
+            <name>Scala-Tools Maven2 Repository</name>
+            <url>http://scala-tools.org/repo-releases</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -7,23 +7,81 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.0.RELEASE)
 
-2020-12-02 01:18:31.168  INFO 26327 --- [           main] zhongjian.controller.MavenApplication    : Starting MavenApplication v1.0-SNAPSHOT on alideMacBook-Pro-2.local with PID 26327 (/Users/ali/daimler/zhongjiansms/target/zongjiaosms-1.0-SNAPSHOT.jar started by ali in /Users/ali/daimler/zhongjiansms/target)
-2020-12-02 01:18:31.200  INFO 26327 --- [           main] zhongjian.controller.MavenApplication    : No active profile set, falling back to default profiles: default
-2020-12-02 01:18:31.935  INFO 26327 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2020-12-02 01:18:31.949  INFO 26327 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-02 01:18:31.950  INFO 26327 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2020-12-02 01:18:31.956  INFO 26327 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2020-12-02 01:18:32.005  INFO 26327 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-02 01:18:32.005  INFO 26327 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 770 ms
-2020-12-02 01:18:32.020  INFO 26327 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-12-02 01:18:32.022  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-12-02 01:18:32.023  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-12-02 01:18:32.023  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2020-12-02 01:18:32.024  INFO 26327 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-12-02 01:18:32.156  INFO 26327 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-02 01:18:32.235  WARN 26327 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-12-02 01:18:32.399  INFO 26327 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2020-12-02 01:18:32.401  INFO 26327 --- [           main] zhongjian.controller.MavenApplication    : Started MavenApplication in 16.549 seconds (JVM running for 16.932)
-2020-12-02 01:18:57.987  INFO 26327 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-02 01:18:57.987  INFO 26327 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-02 01:18:57.993  INFO 26327 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-12-04 23:12:28.677  INFO 89384 --- [           main] zhongjian.controller.MavenApplication    : Starting MavenApplication v1.0-SNAPSHOT on alideMacBook-Pro-2.local with PID 89384 (/Users/ali/daimler/zhongjiansms/target/zongjiaosms-1.0-SNAPSHOT.jar started by ali in /Users/ali/daimler/zhongjiansms/target)
+2020-12-04 23:12:28.684  INFO 89384 --- [           main] zhongjian.controller.MavenApplication    : No active profile set, falling back to default profiles: default
+2020-12-04 23:12:31.270  INFO 89384 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-12-04 23:12:31.300  INFO 89384 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-04 23:12:31.300  INFO 89384 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-12-04 23:12:31.312  INFO 89384 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-12-04 23:12:31.418  INFO 89384 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-04 23:12:31.418  INFO 89384 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2536 ms
+2020-12-04 23:12:31.443  INFO 89384 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-12-04 23:12:31.448  INFO 89384 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-04 23:12:31.449  INFO 89384 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-04 23:12:31.449  INFO 89384 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2020-12-04 23:12:31.449  INFO 89384 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-04 23:12:31.689  INFO 89384 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-04 23:12:31.803  WARN 89384 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-04 23:12:31.943 ERROR 89384 --- [           main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8088]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:960) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.2.RELEASE.jar!/:5.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.0.RELEASE.jar!/:2.1.0.RELEASE]
+	at zhongjian.controller.MavenApplication.main(MavenApplication.java:11) ~[classes!/:1.0-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[zongjiaosms-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[zongjiaosms-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[zongjiaosms-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[zongjiaosms-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:455) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:447) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1108) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:550) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:957) ~[tomcat-embed-core-9.0.12.jar!/:9.0.12]
+	... 22 common frames omitted
+
+2020-12-04 23:12:31.947  INFO 89384 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.catalina.loader.WebappClassLoaderBase (jar:file:/Users/ali/daimler/zhongjiansms/target/zongjiaosms-1.0-SNAPSHOT.jar!/BOOT-INF/lib/tomcat-embed-core-9.0.12.jar!/) to field java.io.ObjectStreamClass$Caches.localDescs
+WARNING: Please consider reporting this to the maintainers of org.apache.catalina.loader.WebappClassLoaderBase
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-12-04 23:12:31.964  INFO 89384 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-04 23:12:31.965 ERROR 89384 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8088 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8088, or configure this application to listen on another port.
+
+2020-12-04 23:12:31.968  INFO 89384 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

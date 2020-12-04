@@ -9,14 +9,21 @@ import java.security.GeneralSecurityException;
 import java.util.Properties;
 
 public class EmailUtil {
-
+    /**
+     *
+     * @param toUser
+     * @param title
+     * @param content
+     * @throws MessagingException
+     * @throws GeneralSecurityException
+     */
     public static void sendEmail(String toUser, String title, String content) throws MessagingException, GeneralSecurityException {
-        String userName = "tq070@qq.com";
-        String password = "vvlepbssdbvwbgic";
-        String smtp = "smtp.qq.com";
+        String userName = "@mail.com";//发件邮箱
+        String password = "";//密码
+        String smtp = "smtp.mail.com";//smtp地址
         //创建一个配置文件并保存
         Properties properties = new Properties();
-
+        //下面是qq的配置方式，请更换为企业邮箱
         properties.setProperty("mail.host", "smtp.qq.com");
 
         properties.setProperty("mail.transport.protocol", "smtp");

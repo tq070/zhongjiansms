@@ -7,8 +7,8 @@ zhongjian/util/MD5Utils.class
 zhongjian/util/SendMessageUtil.class
 zhongjian/util/EmailUtil$1.class
 zhongjian/util/EmailUtil.class
-zhongjian/controller/SampleController.class
 zhongjian/util/HttpClientUtils.class
 zhongjian/service/impl/MailServiceImpl.class
 zhongjian/util/HttpClient.class
 zhongjian/util/HttpSendUtils.class
+zhongjian/controller/SMSController.class
