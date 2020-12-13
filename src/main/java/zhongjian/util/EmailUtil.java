@@ -18,9 +18,10 @@ public class EmailUtil {
      * @throws GeneralSecurityException
      */
     public static void sendEmail(String toUser, String title, String content) throws MessagingException, GeneralSecurityException {
-        String userName = "@mail.com";//发件邮箱
-        String password = "";//密码
-        String smtp = "smtp.mail.com";//smtp地址
+        System.out.println("========================"+content);
+        String userName = "86984642@qq.com";//发件邮箱
+        String password = "ctoputslvcgqbhfa";//密码
+        String smtp = "smtp.qq.com";//smtp地址
         //创建一个配置文件并保存
         Properties properties = new Properties();
         //下面是qq的配置方式，请更换为企业邮箱
@@ -77,7 +78,7 @@ public class EmailUtil {
     }
 
 
-    public static void main(String[] args) throws MessagingException, GeneralSecurityException {
-        sendEmail("86984642@qq.com", "ceshi", "ceshi");
-    }
+//    public static void main(String[] args) throws MessagingException, GeneralSecurityException {
+//        sendEmail("86984642@qq.com", "ceshi", "ceshi");
+//    }
 }

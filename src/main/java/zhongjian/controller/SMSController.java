@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import zhongjian.service.MailService;
 import zhongjian.util.EmailUtil;
+import zhongjian.util.LocalCacheUtil;
+import zhongjian.util.MapCacheUtil;
 import zhongjian.util.SendMessageUtil;
 
 import javax.mail.MessagingException;
@@ -22,13 +24,15 @@ import java.util.Random;
 public class SMSController {
     /**
      * 账号信息
-     *   平台编码:ZJWBGYS
-     *   平台密码:4HEXC3tM
-     *   平台签名:hHzepSbx
+     * 平台编码:ZJWBGYS
+     * 平台密码:4HEXC3tM
+     * 平台签名:hHzepSbx
      */
     private String account = "ZJWBGYS";
     private String password = "4HEXC3tM";
     private String sig = "hHzepSbx";
+    private LocalCacheUtil localCacheUtil = new LocalCacheUtil();
+
     //    private MailService mailService;
     @RequestMapping("/")
     @ResponseBody
@@ -41,6 +45,7 @@ public class SMSController {
     @ResponseBody
     @CrossOrigin
     ResponseEntity<String> sendMail(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        System.out.println("========================");
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Cache-Control", "no-cache");
         String info = "";
@@ -49,6 +54,7 @@ public class SMSController {
         String companyName = request.getParameter("companyName");
         String email = request.getParameter("email");
         String content = request.getParameter("content");
+        System.out.println("=====" + content);
         if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(phone) && StringUtils.isNotBlank(companyName) && StringUtils.isNotBlank(email)) {
             /**
              * 然后作为用户是点击验证码，手机收到：验证码，点击预约，
@@ -84,16 +90,36 @@ public class SMSController {
         Random random = new Random();
         int r = random.nextInt(9999);
         String mobile = request.getParameter("phone");
-        ;
-        String content = "【中交兴路】验证码为" + r + "，请在5分钟内输入，谢谢使用！";
+
+        String content = "验证码为" + r + "，请在5分钟内输入，谢谢使用！";
         String result = SendMessageUtil.sendMsg(account, password, mobile, content, sig);
         JSONObject object = JSONObject.fromObject(result);
+
+        localCacheUtil.putValue(mobile, r, 300);
         int status = Integer.parseInt(object.get("status").toString());
         if (status == 0) {
             return ResponseEntity.ok(String.valueOf(r));
         } else {
             return ResponseEntity.ok("400");
         }
+    }
+
+    @RequestMapping("/getSMS")
+    @ResponseBody
+    ResponseEntity<String> getSMS(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Cache-Control", "no-cache");
+        String mobile = request.getParameter("phone");
+        String code = request.getParameter("code");
+        if (StringUtils.isNotBlank(mobile) && StringUtils.isNotBlank(code)) {
+            if (localCacheUtil != null && localCacheUtil.getValue(mobile) != null) {
+                String value = localCacheUtil.getValue(mobile).toString();
+                if (value.equals(code)) {
+                    return ResponseEntity.ok("200");
+                }
+            }
+        }
+        return ResponseEntity.ok("400");
     }
 
     public static void main(String[] args) throws Exception {
